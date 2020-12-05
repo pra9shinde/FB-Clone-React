@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-FB Clone is a simple facebook clone build using react and firebase
+FB Clone is a simple facebook clone built using react and firebase
 
 -   Google Authentication
 -   Insert Messages and Image links in posts
