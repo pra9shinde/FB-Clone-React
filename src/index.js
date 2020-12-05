@@ -4,9 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// React Context API
+import { StateProvider } from './StateProvider';
+import reducer, { initialState } from './reducer';
+
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <StateProvider initialState={initialState} reducer={reducer}>
+            <App />
+        </StateProvider>
     </React.StrictMode>,
     document.getElementById('root')
 );

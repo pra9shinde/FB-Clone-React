@@ -9,13 +9,14 @@ import StoreIconFront from '@material-ui/icons/Storefront';
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
 import { ExpandMoreOutlined } from '@material-ui/icons';
 
+import { useStateValue } from '../StateProvider';
+
 function Sidebar() {
+    const [{ user }, dispatch] = useStateValue();
+
     return (
         <div className='sidebar'>
-            <SidebarRow
-                src='https://lh3.googleusercontent.com/a-/AOh14GhGauToJTP53V9qzWzZaEme8nQ_-gOWc8FL_y1lxA=s88-c-k-c0x00ffffff-no-rj-mo'
-                title='Pranav Shinde'
-            />
+            <SidebarRow src={user.photoURL} title={user.displayName} />
             <SidebarRow Icon={EmojiFlagsIcon} title='Pages' />
             <SidebarRow Icon={PeopleIcon} title='Friends' />
             <SidebarRow Icon={ChatIcon} title='Messenger' />
