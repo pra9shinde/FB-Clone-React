@@ -35,7 +35,6 @@ $ npm start
 -   Likes, Comments
 -   Upload image to firebase hosting
 -   Show stories on click for 30 secs
--   Mobile responsive
 
 ## License
 

@@ -11,12 +11,13 @@ import ForumIcon from '@material-ui/icons/Forum';
 import AddIcon from '@material-ui/icons/Add';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import MenuIcon from '@material-ui/icons/Menu';
 
 import { Avatar, IconButton } from '@material-ui/core';
 
 import { useStateValue } from '../StateProvider';
 
-function Header() {
+function Header(props) {
     const [{ user }, dispatch] = useStateValue();
 
     return (
@@ -66,6 +67,12 @@ function Header() {
                 </IconButton>
                 <IconButton>
                     <ExpandMoreIcon />
+                </IconButton>
+            </div>
+
+            <div className='header__right-mobile'>
+                <IconButton onClick={props.click}>
+                    <MenuIcon />
                 </IconButton>
             </div>
         </div>

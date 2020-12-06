@@ -19,23 +19,26 @@ function MessageSender() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        db.collection('posts').add({
-            message: input,
-            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-            profilePic: user.photoURL,
-            username: user.displayName,
-            image: imageUrl,
-        });
-
-        // DB Operation
-        setInput('');
-        setImageUrl('');
+        if (input.length <= 0) {
+            alert('Please enter some message!!!');
+        } else {
+            db.collection('posts').add({
+                message: input,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+                profilePic: user.photoURL,
+                username: user.displayName,
+                image: imageUrl,
+            });
+            // DB Operation
+            setInput('');
+            setImageUrl('');
+        }
     };
 
     return (
         <div className='messageSender'>
             <div className='messageSender__top'>
-                <Avatar src={user.photoURL} />
+                <Avatar src={user.photoURL} className='profilePic-sendMessage' />
 
                 <form>
                     <input
@@ -45,9 +48,15 @@ function MessageSender() {
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
                     />
-                    <input type='text' placeholder='Image URL(Optional)' value={imageUrl} onChange={(e) => setImageUrl(e.target.value)} />
-                    <button type='submit' onClick={handleSubmit}>
-                        Hidden Submit
+                    <input
+                        type='text'
+                        placeholder='Image URL(Optional)'
+                        className='img-url'
+                        value={imageUrl}
+                        onChange={(e) => setImageUrl(e.target.value)}
+                    />
+                    <button type='submit' onClick={handleSubmit} className='submit-btn'>
+                        Post
                     </button>
                 </form>
             </div>

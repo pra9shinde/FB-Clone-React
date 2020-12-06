@@ -63,3 +63,12 @@
     background-color: #eff2f5;
     border-radius: 10px;
 }
+
+@media only screen and (max-width: 425px) {
+    .post__option {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

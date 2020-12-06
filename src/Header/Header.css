@@ -82,3 +82,35 @@
 .header__info > h4 {
     margin-left: 10px;
 }
+
+.header__right-mobile > .MuiSvgIcon-root {
+    color: gray;
+}
+
+.header__right-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .header__center > .header__option > .MuiSvgIcon-root {
+        font-size: 20px;
+    }
+
+    .header__input > input {
+        width: 100px;
+    }
+
+    .header__right-mobile {
+        display: block;
+    }
+
+    .header__right {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .header__center {
+        display: none;
+    }
+}

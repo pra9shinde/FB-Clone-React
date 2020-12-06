@@ -1,0 +1,9 @@
+.sidebar-mobile {
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 25px 10px;
+    flex: 0.33;
+    background-color: #fff;
+    height: 100%;
+}

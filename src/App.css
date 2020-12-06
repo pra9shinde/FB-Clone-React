@@ -6,3 +6,13 @@
 .app__body {
     display: flex;
 }
+
+@media only screen and (max-width: 1000px) {
+    .feed {
+        padding: 30px 40px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}

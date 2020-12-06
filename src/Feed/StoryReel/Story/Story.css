@@ -27,3 +27,27 @@
     left: 20px;
     color: #ffffff;
 }
+
+@media only screen and (max-width: 700px) {
+    .story {
+        width: 80px;
+        height: 120px;
+    }
+
+    .story > h4 {
+        bottom: 6px;
+        left: 5px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .story {
+        width: 60px;
+        height: 110px;
+    }
+
+    .story > h4 {
+        font-size: 12px;
+    }
+}
