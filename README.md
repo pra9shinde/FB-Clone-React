@@ -6,6 +6,7 @@ FB Clone is a simple facebook clone built using react and firebase
 
 -   Google Authentication
 -   Insert Messages and Image links in posts
+-   Live posts, latest posts are displayed first without any refresh
 
 ### Tech
 
