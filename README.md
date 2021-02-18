@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
+Live Demo - [FB clone](https://fb-clone-react-a59e9.web.app/).
+
 FB Clone is a simple facebook clone built using react and firebase
 
 -   Google Authentication
@@ -17,7 +19,6 @@ Facbook Clone uses :
 -   Firebase
 -   Firebase Authentication & Firebase Firestore
 
-And of course here's a live demonstration of our [FB clone](https://fb-clone-react-a59e9.web.app/).
 
 ### Installation
 
